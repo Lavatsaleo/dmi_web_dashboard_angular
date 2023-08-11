@@ -1,0 +1,30 @@
+.overview-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.overViewRow{
+    display: flex;
+    /* column-gap: 0.125rem; */
+    align-items: center;
+}
+.overViewRow .card{
+    min-width: '100%';
+    min-height: 16rem
+}
+
+.covidCharts .card{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    
+}
+
+.equal-col {
+    flex: 1;
+    max-width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.equal-height-row {
+    display: flex;
+}

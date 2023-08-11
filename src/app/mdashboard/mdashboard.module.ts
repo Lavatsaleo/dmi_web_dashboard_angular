@@ -19,6 +19,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
+
+
 const appRoute: Routes = [
   {path:'', component:OverviewComponent},
   {path:'Covid 19 Results', component:Covid19resultsComponent},
