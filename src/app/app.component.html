@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #04aa6d;
+        }
+
+        .active {
+            background-color: #333;
+        }
+    </style>
+</head>
+<!-- <body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="height: 6rem">
+        <div class="container-fluid">
+            <img src="../../assets/kenya-court-of-arms.png" alt="logo" width="60" height="70" class="navbar-brand" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mortality Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">AFI Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SARI/ILI Dashboard</a>
+                    </li>
+                </ul>
+                <form class="d-flex"></form>
+            </div>
+        </div>
+    </nav> -->
+
+<div class="container-fluid">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul>
+        <li><img src="../../assets/kenya-court-of-arms.png" alt="logo" width="60" height="70" class="navbar-brand" /></li>
+        <li><a class="active" href="#home" routerLink="/">Home</a></li>
+        <li><a href routerLink="/MortalityDashboard">Mortality Dashboard</a></li>
+        <li><a href routerLink="/AFIDashboard">AFI Dashboard</a></li>
+        <li><a href routerLink="/SARI/ILIDashboard">SARI/ILI Dashboard</a></li>
+    </ul>
+    <form class="d-flex"></form>
+    <div style="text-align: center; font-weight: bolder; font-size: 50px">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+</html>
+
+
+
+<app-home></app-home>
+<app-sdashboard></app-sdashboard>
 <app-mdashboard></app-mdashboard>

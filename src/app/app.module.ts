@@ -9,9 +9,15 @@ import { CoreModule } from './core/core.module';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { MdashboardModule } from './mdashboard/mdashboard.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SdashboardComponent } from './sdashboard/sdashboard.component';
+import { AdashboardComponent } from './adashboard/adashboard.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SdashboardComponent,
+    AdashboardComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
