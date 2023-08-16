@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,24 +8,30 @@ import { CoreModule } from './core/core.module';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { MdashboardModule } from './mdashboard/mdashboard.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { SdashboardComponent } from './sdashboard/sdashboard.component';
-import { AdashboardComponent } from './adashboard/adashboard.component';
-import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+//import { SariDashboardModule } from './sari-dashboard/sari-dashboard.module';
+import { AfidashboardModule } from './afidashboard/afidashboard.module';
+//import { SaridashboardComponent } from './saridashboard/saridashboard.component';
+import { SaridashboardModule } from './saridashboard/saridashboard.module';
+
+
+
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
-    SdashboardComponent,
-    AdashboardComponent,
-    HomeComponent
-  ],
+    PageNotFoundComponent,
+    //SaridashboardComponent
+   ],
   imports: [
     BrowserModule,
+    AfidashboardModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     CoreModule,
     HighchartsChartModule,
     MdashboardModule,
-    NgbModule
+    NgbModule,
+    SaridashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

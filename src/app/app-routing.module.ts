@@ -1,20 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AdashboardComponent } from './adashboard/adashboard.component';
-import { SdashboardComponent } from './sdashboard/sdashboard.component';
-import { MdashboardComponent } from './mdashboard/mdashboard.component';
-import { HomeComponent } from './home/home.component';
+//import { DashboardComponent } from './sari-dashboard/dashboard/dashboard.component';
 
 const routes: Routes = [
-  {path: '', component:HomeComponent},
-  {path: 'MortalityDashboard', component:MdashboardComponent},
-  {path: 'AFIDashboard', component:AdashboardComponent},
-  {path: 'SARI/ILIDashboard',component:SdashboardComponent},
-
+  { path: '', redirectTo: 'mDashboard/overview', pathMatch: 'full' },
+  { path: 'mDashboard', redirectTo: 'mDashboard/overview', pathMatch: 'full' },
+  { path: 'afiDashboard', redirectTo: 'afiDashboard/overview',pathMatch: 'full' },
+  { path: 'saridashboard', redirectTo: 'saridashboard/overview', pathMatch:'full' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

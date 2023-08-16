@@ -1,0 +1,40 @@
+<div>
+    <div class="sideNav">
+        <div class="container-fluid">
+            <div class="row flex-nowrap">
+                <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
+                    <div
+                        class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                            id="menu">
+                            <li class="nav-item">
+                                <a [routerLink]="['./overview']" class="nav-link align-middle px-0">
+                                    <i class="fs-4 bi-house"></i>
+                                    <span class="ms-1 d-none d-sm-inline">Overview</span>
+                                </a>
+                                <a [routerLink]="['./syndromic-cases']" class="nav-link align-middle px-0">
+                                    <i class="fs-4 bi-house"></i>
+                                    <span class="ms-1 d-none d-sm-inline">Syndromic Cases</span>
+                                </a>
+                                <a [routerLink]="['./laboratory-results']" class="nav-link align-middle px-0">
+                                    <i class="fs-4 bi-house"></i>
+                                    <span class="ms-1 d-none d-sm-inline">Laboratory Results</span>
+                                </a>
+                                <a [routerLink]="['./diagnosis-and-outcome']" class="nav-link align-middle px-0">
+                                    <i class="fs-4 bi-house"></i>
+                                    <span class="ms-1 d-none d-sm-inline">Diagnosis & Outcome</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <hr />
+                    </div>
+                </div>
+                <div class="col py-3">
+                    <!-- <h2>Fetched API Data</h2> -->
+                    <router-outlet> </router-outlet>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
